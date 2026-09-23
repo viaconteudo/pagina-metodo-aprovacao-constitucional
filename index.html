@@ -221,6 +221,10 @@
         }
 
         .audience {
+            text-align: center;
+        }
+
+        .audience__grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
@@ -228,7 +232,7 @@
         }
 
         @media (max-width: 768px) {
-            .audience {
+            .audience__grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -561,24 +565,26 @@
 
     <section class="audience">
         <div class="container">
-            <h2 style="grid-column: 1 / -1; text-align: center;">Este curso é pra você?</h2>
-            <div class="audience__card audience__card--yes">
-                <h3><span style="font-size: 2rem;">✓</span> Este curso É pra você se:</h3>
-                <ul>
-                    <li>Você já tem base teórica mas precisa de método prático para a prova discursiva</li>
-                    <li>Quer aprender a estrutura exata das peças profissionais de Direito Constitucional</li>
-                    <li>Procura técnicas de redação que otimizam seu tempo e maximizam sua pontuação</li>
-                    <li>Precisa de um método direto, sem enrolação, focado no que realmente cai</li>
-                </ul>
-            </div>
-            <div class="audience__card audience__card--no">
-                <h3><span style="font-size: 2rem;">✗</span> Este curso NÃO é pra você se:</h3>
-                <ul>
-                    <li>Você ainda não estudou o conteúdo teórico básico de Direito Constitucional</li>
-                    <li>Está procurando um curso introdutório ou revisão completa de todo o edital</li>
-                    <li>Busca apenas videoaulas teóricas sem foco em estratégia de prova</li>
-                    <li>Prefere estudar sem praticar a escrita das peças profissionais</li>
-                </ul>
+            <h2>Este curso é pra você?</h2>
+            <div class="audience__grid">
+                <div class="audience__card audience__card--yes">
+                    <h3><span style="font-size: 2rem;">✓</span> Este curso É pra você se:</h3>
+                    <ul>
+                        <li>Você já tem base teórica mas precisa de método prático para a prova discursiva</li>
+                        <li>Quer aprender a estrutura exata das peças profissionais de Direito Constitucional</li>
+                        <li>Procura técnicas de redação que otimizam seu tempo e maximizam sua pontuação</li>
+                        <li>Precisa de um método direto, sem enrolação, focado no que realmente cai</li>
+                    </ul>
+                </div>
+                <div class="audience__card audience__card--no">
+                    <h3><span style="font-size: 2rem;">✗</span> Este curso NÃO é pra você se:</h3>
+                    <ul>
+                        <li>Você ainda não estudou o conteúdo teórico básico de Direito Constitucional</li>
+                        <li>Está procurando um curso introdutório ou revisão completa de todo o edital</li>
+                        <li>Busca apenas videoaulas teóricas sem foco em estratégia de prova</li>
+                        <li>Prefere estudar sem praticar a escrita das peças profissionais</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
